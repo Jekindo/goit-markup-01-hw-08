@@ -1,0 +1,28 @@
+.peculiarities {
+    &__thumb {
+        @include centeredFlex(flex);
+        height: 120px;
+        margin-bottom: 30px;
+
+        border-radius: $border-radius;
+
+        background-color: getColor("light-bc");
+    }
+
+    &__icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+
+        color: getColor('title-text');
+        @include font(700, inherit);
+        text-transform: uppercase;
+    }
+
+	&__text {
+		line-height: 1.7;
+	}
+}

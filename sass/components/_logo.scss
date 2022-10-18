@@ -1,0 +1,18 @@
+.logo {
+	display: inline-block;
+	
+	font-family: "Raleway", sans-serif;
+   @include font(700, 26px, 1.19);
+
+   > span {
+	color: getColor('accent');
+   }
+
+   &--dark {
+	color: getColor('primary-black');
+   }
+
+   &--light {
+	color: getColor('primary-white');
+   }
+}

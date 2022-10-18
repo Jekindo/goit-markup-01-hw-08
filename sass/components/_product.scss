@@ -1,0 +1,59 @@
+.product {
+	background-color: getCpolor('primary-white');
+	@include transition(box-shadow);
+
+	&:hover,
+	&:focus {
+		box-shadow: $product-shadow;
+	}
+
+	&__thumb {
+		position: relative;
+		overflow: hidden;
+	}
+
+	&__descr {
+		color: getColor('primary-white');
+		@include font($size: 18px, $height: 1.56);
+	}
+
+	&__meta {
+		padding: 20px 24px;
+
+		border: 1px solid getColor('product-border');
+	}
+
+	&__name {
+		margin-bottom: 4px;
+		
+		color: getColor('title-text');
+		@include font(700, 18px, 2, 0.06);
+	}
+
+	&__category {
+		color: getColor('primary-text');
+
+		@include font($size: 16px, $height: 1.88);
+	}
+}
+
+.product__overlay {
+	position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+
+    width: 100%;
+    height: 100%;
+    padding: 60px 24px;
+
+    transform: translateY(100%);
+	@include transition('transform');
+
+    background-color: getColor('accent-with-transparency');
+
+	.product__thumb:hover > &,
+	.product__thumb:focus > & {
+		transform: translateY(0);
+	}
+}

@@ -1,0 +1,70 @@
+.hero {
+    width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    text-align: center;
+    background-color: getColor("dark-bc");
+    background-image: linear-gradient(
+            to right,
+            getColor("dark-bc-gradient"),
+            getColor("dark-bc-gradient")
+        ),
+        url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__title {
+        margin-bottom: 30px;
+
+        color: getColor("primary-white");
+        text-align: center;
+        text-transform: uppercase;
+        @include font(900, 44px, 1.36, 0.06);
+    }
+}
+
+.hero__button {
+    &::after,
+    &::before {
+        content: "";
+
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+		@include transition(transform);
+    }
+
+    &::after {
+        margin-left: 10px;
+
+        background-image: url(../images/icons/order.png);
+    }
+
+    &::before {
+        position: absolute;
+        top: 50%;
+        right: 32px;
+        transform: translateY(calc(-50% + 40px));
+
+        background-image: url(../images/icons/order-ready.png);
+    }
+
+    &:hover::after,
+    &:focus::after {
+        transform: translateY(-40px);
+    }
+
+    &:hover::before,
+    &:focus::before {
+        transform: translateY(-50%);
+    }
+}

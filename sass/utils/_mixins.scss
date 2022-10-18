@@ -1,0 +1,25 @@
+@mixin font($weight: 400, $size: 14px, $height: 1.14, $letter-spacing: 0.03) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $letter-spacing + em;
+}
+
+@mixin alignCenteredFlex($type: flex) {
+    display: $type;
+    align-items: center;
+}
+
+@mixin centeredFlex($type: inline-flex) {
+    display: $type;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin transition($properties...) {
+	transition: getTransition('duration') getTransition('timing-function');
+	@if length($properties) > 0 {
+	  transition-property: $properties;
+	}
+}
+  

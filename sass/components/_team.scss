@@ -1,0 +1,35 @@
+.team {
+	background-color: getColor('light-bc');
+
+	&__section-title {
+		margin-bottom: 50px;
+	}
+}
+
+.team-member {
+    border-bottom-right-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+
+	background-color: getColor('primary-white');
+    box-shadow: $modal-shadow;
+
+	&__content {
+		padding: 30px 32px;
+	}
+
+	&__name {
+		margin-bottom: 10px;
+
+		color: getColor('title-text');
+		text-align: center;
+		@include font(500, 16px, 1.19)
+	}
+
+	&__position {
+		margin-bottom: 16px;
+
+		text-align: center;
+		font-size: 16px;
+		line-height: 1.19;
+	}
+}

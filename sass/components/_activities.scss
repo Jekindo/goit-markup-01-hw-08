@@ -1,0 +1,29 @@
+.activities {
+    padding-top: 0;
+
+    &__section-title {
+        margin-bottom: 50px;
+    }
+
+    &__card {
+        position: relative;
+    }
+
+    &__caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        @include centeredFlex(flex);
+        width: 100%;
+        min-height: 70px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        background-color: getColor('dark-bc-with-transparency');
+        color: getColor('primary-white');
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}

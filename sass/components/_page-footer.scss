@@ -1,0 +1,48 @@
+.page-footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	
+	background-color: getColor('dark-bc');
+
+	&__row {
+		display: flex;
+		align-items: baseline;
+	}
+
+	&__logo {
+		margin-bottom: 20px;
+	}
+
+	&__contacts {
+		margin-right: 70px;
+	}
+
+	&__contact-link {
+		padding: 0;
+
+		color: getColor('link-with-transparency');
+		font-weight: 400;
+		line-height: 1.7;
+	}
+
+	// Action
+	&__action {
+		margin-bottom: 20px;
+	}
+}
+
+.address-list {
+	line-height: 1.7;
+
+	&__item:not(:last-child) {
+		margin-bottom: 9px;
+	}
+
+	&__dislocation {
+		color: getColor('primary-white');
+	}
+}
+
+.follow-us {
+	margin-right: 93px;
+}

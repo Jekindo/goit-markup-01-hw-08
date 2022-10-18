@@ -1,0 +1,70 @@
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+
+	width: 100%;
+	height: 100%;
+
+	opacity: 1;
+	background-color: getColor("backdrop-bc");
+
+	@include transition(opacity);
+
+}
+
+.backdrop--hidden {
+	opacity: 0;
+	pointer-events: none;
+
+	& .modal {
+		transform: translate(-50%, -50%) scale(0.9);
+	}
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1);
+
+	width: 530px;
+	padding: 40px;
+
+	border-radius: $border-radius;
+
+	background-color: getColor('primary-white');
+	box-shadow: $modal-shadow;
+	
+	@include transition(transform);
+}
+
+.close-btn {
+	position: absolute;
+    top: 8px;
+    right: 8px;
+
+    @include centeredFlex;
+    width: 30px;
+    height: 30px;
+	
+    border-radius: 50%;
+	
+    cursor: pointer;
+    background-color: getColor('primary-white');
+    color: getColor('primary-black');
+    border: 1px solid getColor('backdrop-bc');
+
+    @include transition(color);
+
+	&:hover {
+		color: getColor('accent');
+	}
+
+	&__icon {
+		fill: currentColor;
+		width: 11px;
+		height: 11px;
+	}
+}

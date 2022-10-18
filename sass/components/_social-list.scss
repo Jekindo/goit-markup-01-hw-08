@@ -1,0 +1,39 @@
+.social-list {
+    @include centeredFlex(flex);
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__link {
+        @include centeredFlex;
+        width: 44px;
+        height: 44px;
+
+        border-radius: 50%;
+
+        color: getColor("icon");
+
+        @include transition(color, background-color);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        background-color: getColor("accent");
+        color: getColor("primary-white");
+    }
+
+    &__link--gray-bg {
+        background-color: getColor("icon-bc");
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+    }
+
+    &__icon--white {
+        color: getColor("primary-white");
+    }
+}

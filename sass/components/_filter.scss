@@ -1,0 +1,39 @@
+.filter {
+    text-align: center;
+
+    &__field {
+        display: inline-flex;
+    }
+
+    &__field:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    &__input {
+        position: absolute;
+        appearance: none;
+    }
+
+    &__label {
+        padding: 6px 22px;
+
+        border: none;
+        border-radius: $border-radius;
+
+        background-color: getColor("light-bc");
+        color: getColor("title-text");
+        cursor: pointer;
+        font-family: inherit;
+        @include font(500, 16px, 1.62);
+
+        @include transition(color, background-color, box-shadow);
+    }
+
+    &__label:hover,
+    &__label:focus,
+    &__input:checked + &__label {
+        color: getColor('primary-white');
+        background-color: getColor('accent');
+        box-shadow: $filter-button-shadow;
+    }
+}

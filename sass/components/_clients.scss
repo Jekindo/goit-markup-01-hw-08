@@ -1,0 +1,33 @@
+.clients {
+	&__section-title {
+		margin-bottom: 50px;
+	}
+}
+
+.clients-list {
+	&__icon {
+		width: 106px;
+		height: 90px;
+		fill: currentColor;
+	}
+
+}
+
+.clients-list__link {
+	@include centeredFlex;
+	width: 170px;
+	height: 92px;
+
+	border: 1px solid getColor('icon');
+	border-radius: $border-radius;
+	
+	color: getColor('icon');
+	
+	@include transition(color, border-color);
+
+	&:hover,
+	&:focus {
+		color: getColor('accent');
+		border-color: getColor('accent');
+	}
+}

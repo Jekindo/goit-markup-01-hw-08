@@ -1,0 +1,7 @@
+@function getColor($key) {
+	@return map-get($colors, $key)
+};
+
+@function getTransition($key) {
+	@return map-get($transition, $key)
+};

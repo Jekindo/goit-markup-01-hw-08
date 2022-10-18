@@ -1,0 +1,14 @@
+.grid {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: $grid-gap;
+
+	&__item--columns-3 {
+		flex-basis: calc((100% - 2 * #{$grid-gap}) / 3 );
+	}
+
+	&__item--columns-4 {
+		flex-basis: calc((100% - 3 * #{$grid-gap}) / 4 );
+	}
+}

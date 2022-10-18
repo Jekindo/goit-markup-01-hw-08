@@ -1,0 +1,49 @@
+$colors: (
+    "primary-black": #000,
+    "primary-white": #fff,
+    "accent": #2196f3,
+    "accent-with-transparency": rgba(33, 150, 243, 0.9),
+    "dark-bc": #2f303a,
+    "dark-bc-with-transparency": rgba(47, 48, 58, 0.8),
+    "dark-bc-gradient": rgba(47, 48, 58, 0.4),
+    "light-bc": #f5f4fa,
+
+    "primary-text": #757575,
+    "title-text": #212121,
+    "link": #757575,
+    "link-with-transparency": rgba(255, 255, 255, 0.6),
+    "button-hover": #188ce8,
+
+    "icon": #afb1b8,
+    "icon-bc": rgba(255, 255, 255, 0.1),
+    "newsletter-input-border": rgba(255, 255, 255, 0.3),
+    "newsletter-placeholder": rgba(255, 255, 255, 0.6),
+    "backdrop-bc": rgba(0, 0, 0, 0.4),
+    "modal-input-border": rgba(33, 33, 33, 0.2),
+    "modal-icon": #212121,
+    "modal-placeholder": rgba(117, 117, 117, 0.5),
+    "page-bc": #fff,
+    "header-border": #ececec,
+
+	"product-border": #eeeeee,
+);
+
+$grid-gap: 30px;
+
+$border-radius: 4px;
+
+$transition: (
+    "duration": 250ms,
+    "timing-function": cubic-bezier(0.4, 0, 0.2, 1),
+);
+
+$button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+$modal-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+$product-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+$filter-button-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+0px 2px 2px rgba(0, 0, 0, 0.12);

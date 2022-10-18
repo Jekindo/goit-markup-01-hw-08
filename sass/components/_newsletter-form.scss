@@ -1,0 +1,32 @@
+.newsletter-form {
+	&__input {
+		width: 360px;
+		padding: 15px 16px;
+		margin-right: 12px;
+	
+		@include transition(border-color);
+	
+		border: 1px solid getColor('newsletter-input-border');
+		border-radius: $border-radius;
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	
+		outline: none;
+		background-color: transparent;
+		color: getColor('primary-white');
+		font-family: inherit;
+		font-size: 16px;
+		line-height: 1.25;
+	}
+
+	&__input:focus,
+	&__input:hover {
+		border-color: getColor('accent');
+	}
+
+	&__input::placeholder {
+		color: getColor('newsletter-placeholder');
+	}
+}
+
+
+

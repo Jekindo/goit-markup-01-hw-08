@@ -1,0 +1,17 @@
+body {
+    background-color: getColor("page-bc");
+    color: getColor("primary-text");
+    font-family: "Roboto", sans-serif;
+    @include font;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
