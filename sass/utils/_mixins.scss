@@ -18,8 +18,7 @@
 
 @mixin transition($properties...) {
 	transition: getTransition('duration') getTransition('timing-function');
-	@if length($properties) > 0 {
-	  transition-property: $properties;
-	}
+	transition-property: $properties;
+	
 }
   
