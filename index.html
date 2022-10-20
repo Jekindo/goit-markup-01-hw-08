@@ -24,11 +24,9 @@
                     <!-- site-nav -->
                     <ul class="site-nav__list list">
                         <li class="site-nav__item">
-                            <a
-                                href="./main.html"
-                                class="site-nav__link site-nav__link--active">
-								Студия
-							</a>
+                            <a href="./main.html" class="site-nav__link site-nav__link--active">
+                                Студия
+                            </a>
                         </li>
                         <li class="site-nav__item">
                             <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
@@ -37,12 +35,14 @@
                             <a href="" class="site-nav__link">Котакты</a>
                         </li>
                     </ul>
-					button.site-nav__button
                 </nav>
                 <ul class="contacts-list list">
                     <li class="contacts-list__item">
                         <a href="mailto:info@devstudio.com" class="contact-link">
-                            <svg class="contact-link__icon contact-link__icon--start" width="16" height="12">
+                            <svg
+                                class="contact-link__icon contact-link__icon--start"
+                                width="16"
+                                height="12">
                                 <use href="./images/icons/svg-sprite-optimized.svg#icon-mail"></use>
                             </svg>
                             info@devstudio.com
@@ -50,7 +50,10 @@
                     </li>
                     <li class="contacts-list__item">
                         <a href="tel:+380961111111" class="contact-link">
-                            <svg class="contact-link__icon contact-link__icon--start" width="10" height="16">
+                            <svg
+                                class="contact-link__icon contact-link__icon--start"
+                                width="10"
+                                height="16">
                                 <use
                                     href="./images/icons/svg-sprite-optimized.svg#icon-smartphone"></use>
                             </svg>
@@ -58,6 +61,23 @@
                         </a>
                     </li>
                 </ul>
+                <button
+                    class="menu-button"
+					type="button"
+                    data-menu-button
+                    aria-expanded="false"
+                    aria-controls="menu">
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use
+                            class="menu-button__icon-cross"
+                            href="./images/icons/menu-sprite-optimized.svg#icon-cross"></use>
+                        <use
+                            class="menu-button__icon-menu"
+                            href="./images/icons/menu-sprite-optimized.svg#icon-menu"></use>
+                    </svg>
+                </button>
+
+                <div class="menu" data-menu id="menu">Мобильное меню</div>
             </div>
         </header>
         <main>
@@ -75,9 +95,9 @@
             <!--! Особенности -->
             <section class="peculiarities section">
                 <div class="container">
-                    <h2 class="section-title visually-hidden">Особенности</h2>
-                    <ul class="peculiarities__card-set grid list">
-                        <li class="grid__item grid__item--columns-4">
+                    <h2 class="section__title visually-hidden">Особенности</h2>
+                    <ul class="peculiarities__list">
+                        <li class="peculiarities__item">
                             <div class="peculiarities__thumb">
                                 <svg class="peculiarities__icon">
                                     <use
@@ -90,7 +110,7 @@
                                 формированию позиции.
                             </p>
                         </li>
-                        <li class="grid__item grid__item--columns-4">
+                        <li class="peculiarities__item">
                             <div class="peculiarities__thumb">
                                 <svg class="peculiarities__icon">
                                     <use
@@ -103,7 +123,7 @@
                                 влечет за собой.
                             </p>
                         </li>
-                        <li class="grid__item grid__item--columns-4">
+                        <li class="peculiarities__item">
                             <div class="peculiarities__thumb">
                                 <svg class="peculiarities__icon">
                                     <use
@@ -116,7 +136,7 @@
                                 обуславливает.
                             </p>
                         </li>
-                        <li class="grid__item grid__item--columns-4">
+                        <li class="peculiarities__item">
                             <div class="peculiarities__thumb">
                                 <svg class="peculiarities__icon">
                                     <use
@@ -136,17 +156,17 @@
             <!--! Чем мы занимаемся -->
             <section class="activities section">
                 <div class="container">
-                    <h2 class="section-title activities__section-title">Чем мы занимаемся</h2>
-                    <ul class="grid list">
-                        <li class="grid__item grid__item--columns-3 activities__card">
+                    <h2 class="section__title">Чем мы занимаемся</h2>
+                    <ul class="activities__list">
+                        <li class="activities__item">
                             <img src="./images/keyboard.jpg" alt="Руки на клавиатуре" width="370" />
                             <p class="activities__caption">Десктопные приложения</p>
                         </li>
-                        <li class="grid__item grid__item--columns-3 activities__card">
+                        <li class="activities__item">
                             <img src="./images/phone.jpg" alt="Телефон" width="370" />
                             <p class="activities__caption">Мобильные приложения</p>
                         </li>
-                        <li class="grid__item grid__item--columns-3 activities__card">
+                        <li class="activities__item">
                             <img src="./images/tablet.jpg" alt="Планшет" width="370" />
                             <p class="activities__caption">Дизайнерские решения</p>
                         </li>
@@ -157,17 +177,17 @@
             <!--! Наша команда -->
             <section class="team section">
                 <div class="container">
-                    <h2 class="section-title team__section-title">Наша команда</h2>
-                    <ul class="grid list">
-                        <li class="team-member grid__item grid__item--columns-4">
+                    <h2 class="section__title">Наша команда</h2>
+                    <ul class="team__list">
+                        <li class="team__item">
                             <img
-                                class="team-member__img"
+                                class="team__img"
                                 alt="Игорь Демьяненко"
                                 src="./images/ihor.jpg"
                                 width="270" />
-                            <div class="team-member__content">
-                                <h3 class="team-member__name">Игорь Демьяненко</h3>
-                                <p class="team-member__position">Product Designer</p>
+                            <div class="team__member-info">
+                                <h3 class="team__member-name">Игорь Демьяненко</h3>
+                                <p class="team__member-position">Product Designer</p>
                                 <ul class="social-list list">
                                     <li class="social-list__item">
                                         <a href="" class="social-list__link" aria-label="Instagram">
@@ -204,15 +224,15 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="team-member grid__item grid__item--columns-4">
+                        <li class="team__item">
                             <img
-                                class="team-member__img"
+                                class="team__img"
                                 src="./images/olga.jpg"
                                 alt="Ольга Репина"
                                 width="270" />
-                            <div class="team-member__content">
-                                <h3 class="team-member__name">Ольга Репина</h3>
-                                <p class="team-member__position">Frontend Developer</p>
+                            <div class="team__member-info">
+                                <h3 class="team__member-name">Ольга Репина</h3>
+                                <p class="team__member-position">Frontend Developer</p>
                                 <ul class="social-list list">
                                     <li class="social-list__item">
                                         <a href="" class="social-list__link" aria-label="Instagram">
@@ -249,15 +269,15 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="team-member grid__item grid__item--columns-4">
+                        <li class="team__item">
                             <img
-                                class="team-member__img"
+                                class="team__img"
                                 src="./images/nikolay.jpg"
                                 alt="Николай Тарасов"
                                 width="270" />
-                            <div class="team-member__content">
-                                <h3 class="team-member__name">Николай Тарасов</h3>
-                                <p class="team-member__position">Marketing</p>
+                            <div class="team__member-info">
+                                <h3 class="team__member-name">Николай Тарасов</h3>
+                                <p class="team__member-position">Marketing</p>
                                 <ul class="social-list list">
                                     <li class="social-list__item">
                                         <a href="" class="social-list__link" aria-label="Instagram">
@@ -294,15 +314,15 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="team-member grid__item grid__item--columns-4">
+                        <li class="team__item">
                             <img
-                                class="team-member__img"
+                                class="team__img"
                                 src="./images/mihail.jpg"
                                 alt="Михаил Ермаков"
                                 width="270" />
-                            <div class="team-member__content">
-                                <h3 class="team-member__name">Михаил Ермаков</h3>
-                                <p class="team-member__position">UI Designer</p>
+                            <div class="team__member-info">
+                                <h3 class="team__member-name">Михаил Ермаков</h3>
+                                <p class="team__member-position">UI Designer</p>
                                 <ul class="social-list list">
                                     <li class="social-list__item">
                                         <a href="" class="social-list__link" aria-label="Instagram">
@@ -346,8 +366,8 @@
             <!--! Постоянные клиенты -->
             <section class="clients section">
                 <div class="container">
-                    <h2 class="section-title clients__section-title">Постоянные клиенты</h2>
-                    <ul class="clients-list grid list">
+                    <h2 class="section__title">Постоянные клиенты</h2>
+                    <ul class="clients-list">
                         <li class="clients-list__item">
                             <a href="" class="clients-list__link">
                                 <svg class="clients-list__icon">
@@ -406,9 +426,7 @@
             <div class="container page-footer__row">
                 <!-- Contacts -->
                 <div class="page-footer__contacts">
-                    <a href="" class="logo logo--light page-footer__logo"
-                        ><span>Web</span>Studio</a
-                    >
+                    <a href="" class="logo logo--light page-footer__logo"><span>Web</span>Studio</a>
                     <ul class="address-list list">
                         <li class="address-list__item">
                             <span class="address-list__dislocation"
@@ -418,14 +436,14 @@
                         <li class="address-list__item">
                             <a
                                 href="mailto:info@example.com"
-                                class="contact-link page-footer__contact-link link">
+                                class="contact-link page-footer__contact-link">
                                 info@example.com
                             </a>
                         </li>
                         <li class="address-list__item">
                             <a
                                 href="tel:+380991111111"
-                                class="contact-link page-footer__contact-link link"
+                                class="contact-link page-footer__contact-link"
                                 >+38 099 111 11 11</a
                             >
                         </li>
@@ -433,7 +451,7 @@
                 </div>
 
                 <!-- Follow us -->
-                <div class="follow-us">
+                <div class="follow-us page-footer__follow-us">
                     <b class="action page-footer__action">присоединяйтесь</b>
                     <ul class="social-list list">
                         <li class="social-list__item">
@@ -509,12 +527,12 @@
                 </form>
             </div>
         </footer>
-		
+
         <!--! Modal -->
         <div data-modal class="backdrop backdrop--hidden">
             <div class="modal">
-                <button data-modal-close class="close-btn">
-                    <svg class="close-btn__icon">
+                <button data-modal-close class="modal__close-btn">
+                    <svg class="modal__icon-cross">
                         <use href="./images/icons/svg-sprite-optimized.svg#icon-close"></use>
                     </svg>
                 </button>
@@ -587,6 +605,7 @@
         </div>
 
         <script src="./js/modal.js"></script>
-		<script src="./js/header-fixed.js"></script>
+        <script src="./js/header-fixed.js"></script>
+        <script src="./js/menu.js"></script>
     </body>
 </html>

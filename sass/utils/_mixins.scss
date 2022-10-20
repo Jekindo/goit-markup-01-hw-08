@@ -17,8 +17,8 @@
 }
 
 @mixin transition($properties...) {
-	transition: getTransition('duration') getTransition('timing-function');
+	transition-duration: getTransition('duration');
+	transition-timing-function: getTransition('timing-function');
 	transition-property: $properties;
-	
 }
   

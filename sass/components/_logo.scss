@@ -1,0 +1,17 @@
+.logo {
+	display: inline-flex;
+	
+    @extend %logo-font;
+
+    > span {
+        color: getColor("accent");
+    }
+
+    &--dark {
+        color: getColor("primary-black");
+    }
+
+    &--light {
+        color: getColor("primary-white");
+    }
+}

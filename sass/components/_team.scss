@@ -1,0 +1,61 @@
+.team {
+    background-color: getColor("light-bc");
+
+	&__list {
+		@extend %list;
+		
+		@media screen and  (min-width: $tablet) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 25px;
+		}
+	}
+	
+	&__member-info {
+		padding: 30px;
+
+		@media screen and (min-width: $tablet) and (max-width: 1199px) {
+			padding-bottom: 24px;
+		}
+	}
+
+	&__member-name {
+		margin-bottom: 10px;
+
+		color: getColor('title-text');
+		@include font(500, 16px, 1.19)
+	}
+
+	&__member-position {
+		margin-bottom: 16px;
+
+		font-size: 16px;
+		line-height: 1.19;
+	}
+}
+
+
+.team__item {
+	border-bottom-right-radius: $border-radius;
+	border-bottom-left-radius: $border-radius;
+
+	background-color: getColor('primary-white');
+	box-shadow: $modal-shadow;
+
+	text-align: center;
+	
+	&:not(:last-child) {
+		@media screen and (max-width: 767px) {
+			margin-bottom: 30px;
+		}
+	}
+
+	@media screen and (min-width: $tablet) {
+		flex-basis: calc((100% - #{$grid-gap}) / 2);
+	}
+
+	@media screen and (min-width: $desktop) {
+		flex-basis: calc((100% - 3 * #{$grid-gap}) / 4);
+	}
+}

@@ -24,7 +24,7 @@
                     <!-- site-nav -->
                     <ul class="site-nav__list list">
                         <li class="site-nav__item">
-                            <a href="./index.html" class="site-nav__link"> Студия </a>
+                            <a href="./main.html" class="site-nav__link"> Студия </a>
                         </li>
                         <li class="site-nav__item">
                             <a href="./portfolio.html" class="site-nav__link site-nav__link--active"
@@ -61,6 +61,23 @@
                         </a>
                     </li>
                 </ul>
+                <button
+                    class="menu-button"
+                    type="button"
+                    data-menu-button
+                    aria-expanded="false"
+                    aria-controls="menu">
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use
+                            class="menu-button__icon-cross"
+                            href="./images/icons/menu-sprite-optimized.svg#icon-cross"></use>
+                        <use
+                            class="menu-button__icon-menu"
+                            href="./images/icons/menu-sprite-optimized.svg#icon-menu"></use>
+                    </svg>
+                </button>
+
+                <div class="menu" data-menu id="menu">Мобильное меню</div>
             </div>
         </header>
 
@@ -70,14 +87,14 @@
                 <div class="container">
                     <h1 class="section-title visually-hidden">Примеры работ</h1>
                     <!-- Кнопки-фильтры -->
-                    <!-- <div class="filter">
-                        <button type="radio" class="filter__radio-button">Все</button>
-                        <button type="radio" class="filter__radio-button">Веб-сайты</button>
-                        <button type="radio" class="filter__radio-button">Приложения</button>
-                        <button type="radio" class="filter__radio-button">Дизайн</button>
-                        <button type="radio" class="filter__radio-button">Маркетинг</button>
-                    </div> -->
-                    <div class="filter portfolio__filter">
+                    <div class="portfolio__filter">
+                        <button type="button" class="portfolio__radio-button">Все</button>
+                        <button type="button" class="portfolio__radio-button">Веб-сайты</button>
+                        <button type="button" class="portfolio__radio-button">Приложения</button>
+                        <button type="button" class="portfolio__radio-button">Дизайн</button>
+                        <button type="button" class="portfolio__radio-button">Маркетинг</button>
+                    </div>
+                    <!-- <div class="filter portfolio__filter">
                         <label class="filter__field">
                             <input
                                 class="filter__input"
@@ -119,247 +136,219 @@
                                 value="marketing" />
                             <span class="filter__label">Маркетинг</span>
                         </label>
-                    </div>
+                    </div> -->
                     <!-- Примеры работ -->
-                    <ul class="grid list">
-                        <li class="grid__item grid__item--columns-3">
-                            <article class="product">
-                                <a href="" class="product__link">
-                                    <div class="product__thumb">
-                                        <img
-                                            src="./images/techcrack.jpg"
-                                            alt="Технокряк Веб-сайт"
-                                            width="370" />
-                                        <div class="product__overlay">
-                                            <p class="product__descr">
-                                                Ресурс предлагает комплексные предложения с разным
-                                                уровнем функционала и сервисов. Все это позволит
-                                                посетителю получить исчерпывающие сведения о
-                                                компании или частном лице лице лице лице лице лице
-                                                лице лицелице лице лице лице лице лице лице лице
-                                                лице лице лице лице лице лицелицелицелицелицелице
-                                                лице лице лице лице лицеv лице.
-                                            </p>
-                                        </div>
+                    <ul class="portfolio__list">
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__link">
+                                <div class="portfolio__thumb">
+                                    <img
+                                        src="./images/techcrack.jpg"
+                                        alt="Технокряк Веб-сайт"
+                                        width="370" />
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__descr">
+                                            Ресурс предлагает комплексные предложения с разным
+                                            уровнем функционала и сервисов. Все это позволит
+                                            посетителю получить исчерпывающие сведения о компании
+                                            или частном лице лице лице лице лице лице лице лицелице
+                                            лице лице лице лице лице лице лице лице лице лице лице
+                                            лице лицелицелицелицелицелице лице лице лице лице лицеv
+                                            лице.
+                                        </p>
                                     </div>
-                                    <div class="product__meta">
-                                        <h2 class="product__name">Технокряк</h2>
-                                        <p class="product__category">Веб-сайт</p>
-                                    </div>
-                                </a>
-                            </article>
+                                </div>
+                                <div class="portfolio__meta">
+                                    <h2 class="portfolio__heading">Технокряк</h2>
+                                    <p class="portfolio__category">Веб-сайт</p>
+                                </div>
+                            </a>
                         </li>
-                        <li class="grid__item grid__item--columns-3">
-                            <article class="product">
-                                <a href="" class="product__link">
-                                    <div class="product__thumb">
-                                        <img
-                                            src="./images/basketball.jpg"
-                                            alt="Постер New Orlean vs Golden Star"
-                                            width="370" />
-                                        <div class="product__overlay">
-                                            <p class="product__descr">
-                                                Lorem ipsum dolor sit amet.
-                                            </p>
-                                        </div>
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__link">
+                                <div class="portfolio__thumb">
+                                    <img
+                                        src="./images/basketball.jpg"
+                                        alt="Постер New Orlean vs Golden Star"
+                                        width="370" />
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__descr">Lorem ipsum dolor sit amet.</p>
                                     </div>
-                                    <div class="product__meta">
-                                        <h2 class="product__name">
-                                            Постер New Orlean vs Golden Star
-                                        </h2>
-                                        <p class="product__category">Дизайн</p>
-                                    </div>
-                                </a>
-                            </article>
+                                </div>
+                                <div class="portfolio__meta">
+                                    <h2 class="portfolio__heading">Постер New Orlean vs Golden Star</h2>
+                                    <p class="portfolio__category">Дизайн</p>
+                                </div>
+                            </a>
                         </li>
-                        <li class="grid__item grid__item--columns-3">
-                            <article class="product">
-                                <a href="" class="product__link">
-                                    <div class="product__thumb">
-                                        <img
-                                            src="./images/seafood.jpg"
-                                            alt="Ресторан Seafood"
-                                            width="370" />
-                                        <div class="product__overlay">
-                                            <p class="product__descr">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit. Deleniti repellendus quisquam qui dolorum
-                                                veniam. Quae harum reiciendis culpa iusto impedit
-                                                exercitationem architecto recusandae itaque maiores
-                                                ad, tempore aliquam. Asperiores, excepturi.
-                                            </p>
-                                        </div>
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__link">
+                                <div class="portfolio__thumb">
+                                    <img
+                                        src="./images/seafood.jpg"
+                                        alt="Ресторан Seafood"
+                                        width="370" />
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__descr">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit. Deleniti repellendus quisquam qui dolorum veniam.
+                                            Quae harum reiciendis culpa iusto impedit exercitationem
+                                            architecto recusandae itaque maiores ad, tempore
+                                            aliquam. Asperiores, excepturi.
+                                        </p>
                                     </div>
-                                    <div class="product__meta">
-                                        <h2 class="product__name">Ресторан Seafood</h2>
-                                        <p class="product__category">Приложение</p>
-                                    </div>
-                                </a>
-                            </article>
+                                </div>
+                                <div class="portfolio__meta">
+                                    <h2 class="portfolio__heading">Ресторан Seafood</h2>
+                                    <p class="portfolio__category">Приложение</p>
+                                </div>
+                            </a>
                         </li>
-                        <li class="grid__item grid__item--columns-3">
-                            <article class="product">
-                                <a href="" class="product__link">
-                                    <div class="product__thumb">
-                                        <img
-                                            src="./images/headphones.jpg"
-                                            alt="Проект Prime"
-                                            width="370" />
-                                        <div class="product__overlay">
-                                            <p class="product__descr">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Nulla ea illum molestiae autem natus
-                                                consequatur doloribus explicabo, tempore dolor quo
-                                                alias, sunt veniam aliquid mollitia ipsam excepturi
-                                                aliquam labore magni vero. Itaque dignissimos quasi
-                                                temporibus ad. Nobis saepe, voluptatum neque iusto,
-                                                necessitatibus asperiores aliquam eum maxime ipsum
-                                                eaque eos, quae expedita commodi dolorum?
-                                                Exercitationem non quibusdam officiis quas
-                                                reiciendis quaerat, necessitatibus perferendis cum
-                                                modi aspernatur dicta nobis explicabo ipsa placeat
-                                                ea consectetur eveniet quisquam provident fuga amet
-                                                ut neque obcaecati itaque nesciunt. Tempora minima
-                                                atque quae eum optio nostrum? Placeat mollitia
-                                                perspiciatis ipsum minima quasi nemo vero ducimus
-                                                harum facilis.
-                                            </p>
-                                        </div>
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__link">
+                                <div class="portfolio__thumb">
+                                    <img
+                                        src="./images/headphones.jpg"
+                                        alt="Проект Prime"
+                                        width="370" />
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__descr">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Nulla ea illum molestiae autem natus consequatur
+                                            doloribus explicabo, tempore dolor quo alias, sunt
+                                            veniam aliquid mollitia ipsam excepturi aliquam labore
+                                            magni vero. Itaque dignissimos quasi temporibus ad.
+                                            Nobis saepe, voluptatum neque iusto, necessitatibus
+                                            asperiores aliquam eum maxime ipsum eaque eos, quae
+                                            expedita commodi dolorum? Exercitationem non quibusdam
+                                            officiis quas reiciendis quaerat, necessitatibus
+                                            perferendis cum modi aspernatur dicta nobis explicabo
+                                            ipsa placeat ea consectetur eveniet quisquam provident
+                                            fuga amet ut neque obcaecati itaque nesciunt. Tempora
+                                            minima atque quae eum optio nostrum? Placeat mollitia
+                                            perspiciatis ipsum minima quasi nemo vero ducimus harum
+                                            facilis.
+                                        </p>
                                     </div>
-                                    <div class="product__meta">
-                                        <h2 class="product__name">Проект Prime</h2>
-                                        <p class="product__category">Маркетинг</p>
-                                    </div>
-                                </a>
-                            </article>
+                                </div>
+                                <div class="portfolio__meta">
+                                    <h2 class="portfolio__heading">Проект Prime</h2>
+                                    <p class="portfolio__category">Маркетинг</p>
+                                </div>
+                            </a>
                         </li>
-                        <li class="grid__item grid__item--columns-3">
-                            <article class="product">
-                                <a href="" class="product__link">
-                                    <div class="product__thumb">
-                                        <img
-                                            src="./images/boxes.jpg"
-                                            alt="Проект Boxes"
-                                            width="370" />
-                                        <div class="product__overlay">
-                                            <p class="product__descr">
-                                                Lorem ipsum, dolor sit amet consectetur adipisicing
-                                                elit. Ad aut non, suscipit quas animi eius.
-                                            </p>
-                                        </div>
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__link">
+                                <div class="portfolio__thumb">
+                                    <img src="./images/boxes.jpg" alt="Проект Boxes" width="370" />
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__descr">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit. Ad aut non, suscipit quas animi eius.
+                                        </p>
                                     </div>
-                                    <div class="product__meta">
-                                        <h2 class="product__name">Проект Boxes</h2>
-                                        <p class="product__category">Приложение</p>
-                                    </div>
-                                </a>
-                            </article>
+                                </div>
+                                <div class="portfolio__meta">
+                                    <h2 class="portfolio__heading">Проект Boxes</h2>
+                                    <p class="portfolio__category">Приложение</p>
+                                </div>
+                            </a>
                         </li>
-                        <li class="grid__item grid__item--columns-3">
-                            <article class="product">
-                                <a href="" class="product__link">
-                                    <div class="product__thumb">
-                                        <img
-                                            src="./images/inspiration.jpg"
-                                            alt="Inspiration has no Borders web-site"
-                                            width="370" />
-                                        <div class="product__overlay">
-                                            <p class="product__descr">Lorem, ipsum.</p>
-                                        </div>
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__link">
+                                <div class="portfolio__thumb">
+                                    <img
+                                        src="./images/inspiration.jpg"
+                                        alt="Inspiration has no Borders web-site"
+                                        width="370" />
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__descr">Lorem, ipsum.</p>
                                     </div>
-                                    <div class="product__meta">
-                                        <h2 class="product__name">Inspiration has no Borders</h2>
-                                        <p class="product__category">Веб-сайт</p>
-                                    </div>
-                                </a>
-                            </article>
+                                </div>
+                                <div class="portfolio__meta">
+                                    <h2 class="portfolio__heading">Inspiration has no Borders</h2>
+                                    <p class="portfolio__category">Веб-сайт</p>
+                                </div>
+                            </a>
                         </li>
-                        <li class="grid__item grid__item--columns-3">
-                            <article class="product">
-                                <a href="" class="product__link">
-                                    <div class="product__thumb">
-                                        <img
-                                            src="./images/limitededition.jpg"
-                                            alt="Издание Limited Edition"
-                                            width="370" />
-                                        <div class="product__overlay">
-                                            <p class="product__descr">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Placeat neque culpa itaque molestias
-                                                reiciendis dicta, quos sunt, voluptates minima,
-                                                molestiae saepe nobis inventore. Mollitia assumenda
-                                                accusantium vitae minus saepe, ea nobis at delectus
-                                                dicta quis temporibus dolore eligendi, similique
-                                                soluta fugiat ut voluptas laborum tempore modi
-                                                neque? Enim, repellendus totam.
-                                            </p>
-                                        </div>
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__link">
+                                <div class="portfolio__thumb">
+                                    <img
+                                        src="./images/limitededition.jpg"
+                                        alt="Издание Limited Edition"
+                                        width="370" />
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__descr">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Placeat neque culpa itaque molestias reiciendis dicta,
+                                            quos sunt, voluptates minima, molestiae saepe nobis
+                                            inventore. Mollitia assumenda accusantium vitae minus
+                                            saepe, ea nobis at delectus dicta quis temporibus dolore
+                                            eligendi, similique soluta fugiat ut voluptas laborum
+                                            tempore modi neque? Enim, repellendus totam.
+                                        </p>
                                     </div>
-                                    <div class="product__meta">
-                                        <h2 class="product__name">Издание Limited Edition</h2>
-                                        <p class="product__category">Дизайн</p>
-                                    </div>
-                                </a>
-                            </article>
+                                </div>
+                                <div class="portfolio__meta">
+                                    <h2 class="portfolio__heading">Издание Limited Edition</h2>
+                                    <p class="portfolio__category">Дизайн</p>
+                                </div>
+                            </a>
                         </li>
-                        <li class="grid__item grid__item--columns-3">
-                            <article class="product">
-                                <a href="" class="product__link">
-                                    <div class="product__thumb">
-                                        <img src="./images/lab.jpg" alt="Проект LAB" width="370" />
-                                        <div class="product__overlay">
-                                            <p class="product__descr">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Dignissimos autem soluta sapiente aut delectus
-                                                asperiores, molestias ad? Maiores, quidem nostrum
-                                                obcaecati dicta accusamus distinctio eaque,
-                                                similique corporis velit laboriosam quae, numquam
-                                                beatae natus officiis porro! Voluptatibus sapiente
-                                                itaque autem, aliquid consectetur a dolor iste culpa
-                                                quis veritatis. Exercitationem rem, officiis tenetur
-                                                possimus earum quaerat ipsam? Placeat recusandae
-                                                nemo vel quasi voluptatibus necessitatibus esse
-                                                eligendi animi, facilis impedit enim minima
-                                                obcaecati velit doloribus quam porro quae tempore
-                                                fugiat doloremque maxime. Tenetur autem voluptate
-                                                pariatur et alias doloribus soluta, saepe illo
-                                                debitis ut eos, id porro placeat praesentium,
-                                                maiores nulla repudiandae officiis quibusdam. Magni
-                                                vero maxime voluptates reprehenderit odit adipisci
-                                                harum delectus eum repellendus quasi nihil autem,
-                                                repellat iste sint voluptate ea!
-                                            </p>
-                                        </div>
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__link">
+                                <div class="portfolio__thumb">
+                                    <img src="./images/lab.jpg" alt="Проект LAB" width="370" />
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__descr">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Dignissimos autem soluta sapiente aut delectus
+                                            asperiores, molestias ad? Maiores, quidem nostrum
+                                            obcaecati dicta accusamus distinctio eaque, similique
+                                            corporis velit laboriosam quae, numquam beatae natus
+                                            officiis porro! Voluptatibus sapiente itaque autem,
+                                            aliquid consectetur a dolor iste culpa quis veritatis.
+                                            Exercitationem rem, officiis tenetur possimus earum
+                                            quaerat ipsam? Placeat recusandae nemo vel quasi
+                                            voluptatibus necessitatibus esse eligendi animi, facilis
+                                            impedit enim minima obcaecati velit doloribus quam porro
+                                            quae tempore fugiat doloremque maxime. Tenetur autem
+                                            voluptate pariatur et alias doloribus soluta, saepe illo
+                                            debitis ut eos, id porro placeat praesentium, maiores
+                                            nulla repudiandae officiis quibusdam. Magni vero maxime
+                                            voluptates reprehenderit odit adipisci harum delectus
+                                            eum repellendus quasi nihil autem, repellat iste sint
+                                            voluptate ea!
+                                        </p>
                                     </div>
-                                    <div class="product__meta">
-                                        <h2 class="product__name">Проект LAB</h2>
-                                        <p class="product__category">Маркетинг</p>
-                                    </div>
-                                </a>
-                            </article>
+                                </div>
+                                <div class="portfolio__meta">
+                                    <h2 class="portfolio__heading">Проект LAB</h2>
+                                    <p class="portfolio__category">Маркетинг</p>
+                                </div>
+                            </a>
                         </li>
-                        <li class="grid__item grid__item--columns-3">
-                            <article class="product">
-                                <a href="" class="product__link">
-                                    <div class="product__thumb">
-                                        <img
-                                            src="./images/growingbusiness.jpg"
-                                            alt="Growing Business"
-                                            width="370" />
-                                        <div class="product__overlay">
-                                            <p class="product__descr">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Ad vitae itaque est laudantium quis quo ab
-                                                sequi ipsa maiores adipisci.
-                                            </p>
-                                        </div>
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__link">
+                                <div class="portfolio__thumb">
+                                    <img
+                                        src="./images/growingbusiness.jpg"
+                                        alt="Growing Business"
+                                        width="370" />
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__descr">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Ad vitae itaque est laudantium quis quo ab sequi ipsa
+                                            maiores adipisci.
+                                        </p>
                                     </div>
-                                    <div class="product__meta">
-                                        <h2 class="product__name">Growing Business</h2>
-                                        <p class="product__category">Приложение</p>
-                                    </div>
-                                </a>
-                            </article>
+                                </div>
+                                <div class="portfolio__meta">
+                                    <h2 class="portfolio__heading">Growing Business</h2>
+                                    <p class="portfolio__category">Приложение</p>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -371,9 +360,7 @@
             <div class="container page-footer__row">
                 <!-- Contacts -->
                 <div class="page-footer__contacts">
-                    <a href="" class="logo logo--light page-footer__logo"
-                        ><span>Web</span>Studio</a
-                    >
+                    <a href="" class="logo logo--light page-footer__logo"><span>Web</span>Studio</a>
                     <ul class="address-list list">
                         <li class="address-list__item">
                             <span class="address-list__dislocation"
@@ -383,14 +370,14 @@
                         <li class="address-list__item">
                             <a
                                 href="mailto:info@example.com"
-                                class="contact-link page-footer__contact-link link">
+                                class="contact-link page-footer__contact-link">
                                 info@example.com
                             </a>
                         </li>
                         <li class="address-list__item">
                             <a
                                 href="tel:+380991111111"
-                                class="contact-link page-footer__contact-link link"
+                                class="contact-link page-footer__contact-link"
                                 >+38 099 111 11 11</a
                             >
                         </li>
@@ -398,7 +385,7 @@
                 </div>
 
                 <!-- Follow us -->
-                <div class="follow-us">
+                <div class="follow-us page-footer__follow-us">
                     <b class="action page-footer__action">присоединяйтесь</b>
                     <ul class="social-list list">
                         <li class="social-list__item">
@@ -476,5 +463,6 @@
         </footer>
 
         <script src="./js/header-fixed.js"></script>
+        <script src="./js/menu.js"></script>
     </body>
 </html>

@@ -1,0 +1,36 @@
+.activities {
+	padding-top: 0;
+	
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+
+	&__list {
+		@extend %list;
+		display: flex;
+		flex-wrap: wrap;
+		gap: $grid-gap;
+	}
+	
+    &__item {
+        position: relative;
+
+		flex-basis: calc((100% - 2 * #{$grid-gap}) / 3);
+    }
+
+    &__caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        padding-top: 27px;
+        padding-bottom: 27px;
+
+        background-color: getColor("dark-bc-with-transparency");
+        color: getColor("primary-white");
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}

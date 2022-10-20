@@ -1,0 +1,31 @@
+.page-header {
+	width: 100%;
+	
+	border-bottom: 1px solid getColor('header-border');
+	
+	background-color: getColor('primary-white');
+	
+	&__inner {
+		
+		@include alignCenteredFlex;
+		justify-content: space-between;
+		min-height: 60px;
+	}
+
+	&--fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+}
+
+.site-nav {
+	&__list {
+		display: none;
+	}
+}
+
+.contacts-list {
+	display: none;
+}

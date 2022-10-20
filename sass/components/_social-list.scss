@@ -1,0 +1,40 @@
+.social-list {
+	@extend %list;
+    @include centeredFlex(flex);
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.social-list__link {
+	@include centeredFlex;
+	width: 44px;
+	height: 44px;
+
+	border-radius: 50%;
+
+	color: getColor("icon");
+
+	@include transition(color, background-color);
+
+	&--gray-bg {
+        background-color: getColor("icon-bc");
+    }
+	
+	&:hover,
+	&:focus {
+		background-color: getColor("accent");
+		color: getColor("primary-white");
+	}
+}
+
+.social-list__icon {
+	width: 20px;
+	height: 20px;
+	fill: currentColor;
+
+	&--white {
+		color: getColor("primary-white");
+	}
+}

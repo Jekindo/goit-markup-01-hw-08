@@ -1,0 +1,44 @@
+.menu-button {
+	display: inline-flex;
+	padding: 0;
+	margin: 0;
+
+	border: none;
+
+	background-color: transparent;
+
+	&__icon-cross {
+		display: none;
+	}
+	
+	&--open {
+		.menu-button__icon-cross {
+			display: block;
+		}
+
+		.menu-button__icon-menu {
+			display: none;
+		}
+	}
+}
+
+.menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	transform: translateY(-200%);
+
+	width: 100%;	
+	padding: 30px 15px;
+
+	background-color: #896740;
+	color: white;
+	font-size: 20px;
+
+	transition: transform 500ms linear;
+
+	&--open {
+		transition: transform 500ms linear;
+		transform: translateY(0);
+	}
+}

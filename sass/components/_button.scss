@@ -1,0 +1,36 @@
+.button {
+    position: relative;
+    overflow: hidden;
+
+    @include alignCenteredFlex(inline-flex);
+    padding: 10px 32px;
+
+    border-radius: $border-radius;
+    border: none;
+
+    box-shadow: $button-shadow;
+    color: getColor("primary-white");
+    background-color: getColor("accent");
+    cursor: pointer;
+    @include font(700, 16px, 1.88, 0.06);
+
+    @include transition(background-color);
+
+    &:hover,
+    &:focus {
+        background-color: getColor("button-hover");
+    }
+
+    &__icon {
+        fill: currentColor;
+
+        &--start {
+            margin-right: 10px;
+        }
+
+		&--end {
+			margin-left: 10px;
+		}
+    }
+
+}
