@@ -32,6 +32,10 @@
 		margin-right: auto;
         padding-left: 55px;
         padding-right: 55px;
+
+		@media screen and (max-width: 767px) {
+			width: 100%;
+		}
     }
 }
 
@@ -126,10 +130,10 @@
 .policy__label {
 	@include font(inherit, 12px, 1.1);
 	@include transition(color);
-
-	// @media screen and (max-width: 334px) {
-	// 	font-size: 11px;
-	// }
+	
+	@media screen and (max-width: 399px) {
+		font-size: 11px;
+	}
 
 	@media screen and (min-width: $desktop) {
 		font-size: 14px;
