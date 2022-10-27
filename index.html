@@ -24,7 +24,7 @@
                     <!-- site-nav -->
                     <ul class="site-nav__list list">
                         <li class="site-nav__item">
-                            <a href="./main.html" class="site-nav__link site-nav__link--active">
+                            <a href="./index.html" class="site-nav__link site-nav__link--active">
                                 Студия
                             </a>
                         </li>
@@ -64,20 +64,14 @@
                 <button
                     class="menu-button"
                     type="button"
-                    data-menu-button
-                    aria-expanded="false"
+                    data-menu-open
                     aria-controls="menu">
                     <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                        <use
-                            class="menu-button__icon-cross"
-                            href="./images/icons/menu-sprite-optimized.svg#icon-cross"></use>
                         <use
                             class="menu-button__icon-menu"
                             href="./images/icons/menu-sprite-optimized.svg#icon-menu"></use>
                     </svg>
                 </button>
-
-                <div class="menu" data-menu id="menu">Мобильное меню</div>
             </div>
         </header>
         <main>
@@ -159,27 +153,42 @@
                     <h2 class="section__title">Чем мы занимаемся</h2>
                     <ul class="activities__list">
                         <li class="activities__item">
-                            <img
-                                srcset="./images/keyboard.jpg 1x, ./images/keyboard@2x.jpg 2x"
-                                src="./images/keyboard.jpg"
-                                alt="Руки на клавиатуре"
-                                width="370" />
+                            <picture>
+                                <source
+                                    srcset="./images/keyboard.webp 1x, ./images/keyboard@2x.webp 2x"
+                                    type="image/webp" />
+                                <img
+                                    srcset="./images/keyboard.jpg 1x, ./images/keyboard@2x.jpg 2x"
+                                    src="./images/keyboard.jpg"
+                                    alt="Руки на клавиатуре"
+                                    width="370" />
+                            </picture>
                             <p class="activities__caption">Десктопные приложения</p>
                         </li>
                         <li class="activities__item">
-                            <img
-                                srcset="./images/phone.jpg 1x, ./images/phone@2x.jpg 2x"
-                                src="./images/phone.jpg"
-                                alt="Телефон"
-                                width="370" />
+                            <picture>
+                                <source
+                                    srcset="./images/phone.webp 1x, ./images/phone@2x.webp 2x"
+                                    type="image/webp" />
+                                <img
+                                    srcset="./images/phone.jpg 1x, ./images/phone@2x.jpg 2x"
+                                    src="./images/phone.jpg"
+                                    alt="Телефон"
+                                    width="370" />
+                            </picture>
                             <p class="activities__caption">Мобильные приложения</p>
                         </li>
                         <li class="activities__item">
-                            <img
-                                srcset="./images/tablet.jpg 1x, ./images/tablet@2x.jpg 2x"
-                                src="./images/tablet.jpg"
-                                alt="Планшет"
-                                width="370" />
+                            <picture>
+                                <source
+                                    srcset="./images/tablet.webp 1x, ./images/tablet@2x.webp 2x"
+                                    type="image/webp" />
+                                <img
+                                    srcset="./images/tablet.jpg 1x, ./images/tablet@2x.jpg 2x"
+                                    src="./images/tablet.jpg"
+                                    alt="Планшет"
+                                    width="370" />
+                            </picture>
                             <p class="activities__caption">Дизайнерские решения</p>
                         </li>
                     </ul>
@@ -192,11 +201,17 @@
                     <h2 class="section__title">Наша команда</h2>
                     <ul class="team__list">
                         <li class="team__item">
-                            <img
-                                class="team__img"
-                                alt="Игорь Демьяненко"
-                                src="./images/ihor.jpg"
-                                width="270" />
+                            <picture>
+                                <source
+                                    srcset="./images/ihor.webp 1x, ./images/ihor@2x.webp 2x"
+                                    type="image/webp" />
+                                <img
+                                    alt="Игорь Демьяненко"
+                                    class="team__img"
+                                    srcset="./images/ihor.jpg 1x, ./images/ihor@2x.jpg 2x"
+                                    src="./images/ihor.jpg"
+                                    width="270" />
+                            </picture>
                             <div class="team__member-info">
                                 <h3 class="team__member-name">Игорь Демьяненко</h3>
                                 <p class="team__member-position">Product Designer</p>
@@ -237,11 +252,17 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img
-                                class="team__img"
-                                src="./images/olga.jpg"
-                                alt="Ольга Репина"
-                                width="270" />
+                            <picture>
+                                <source
+                                    srcset="./images/olga.webp 1x, ./images/olga@2x.webp 2x"
+                                    type="image/webp" />
+                                <img
+                                    class="team__img"
+									srcset="./images/olga.jpg 1x, olga@2x.jpg 2x"
+                                    src="./images/olga.jpg"
+                                    alt="Ольга Репина"
+                                    width="270" />
+                            </picture>
                             <div class="team__member-info">
                                 <h3 class="team__member-name">Ольга Репина</h3>
                                 <p class="team__member-position">Frontend Developer</p>
@@ -282,11 +303,17 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img
-                                class="team__img"
-                                src="./images/nikolay.jpg"
-                                alt="Николай Тарасов"
-                                width="270" />
+                            <picture>
+                                <source
+                                    srcset="./images/nikolay.webp 1x, ./images/nikolay@2x.webp 2x"
+                                    type="image/webp" />
+                                <img
+                                    class="team__img"
+									srcset="./images/nikolay.jpg 1x, nikolay@2x.jpg 2x"
+                                    src="./images/nikolay.jpg"
+                                    alt="Николай Тарасов"
+                                    width="270" />
+                            </picture>
                             <div class="team__member-info">
                                 <h3 class="team__member-name">Николай Тарасов</h3>
                                 <p class="team__member-position">Marketing</p>
@@ -327,11 +354,17 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img
-                                class="team__img"
-                                src="./images/mihail.jpg"
-                                alt="Михаил Ермаков"
-                                width="270" />
+                            <picture>
+                                <source
+                                    srcset="./images/mihail.webp 1x, ./images/mihail@2x.webp 2x"
+                                    type="image/webp" />
+                                <img
+                                    class="team__img"
+									srcset="./images/mihail.jpg 1x, mihail@2x.jpg 2x"
+                                    src="./images/mihail.jpg"
+                                    alt="Михаил Ермаков"
+                                    width="270" />
+                            </picture>
                             <div class="team__member-info">
                                 <h3 class="team__member-name">Михаил Ермаков</h3>
                                 <p class="team__member-position">UI Designer</p>
@@ -381,7 +414,7 @@
                     <h2 class="section__title">Постоянные клиенты</h2>
                     <ul class="clients-list">
                         <li class="clients-list__item">
-                            <a href="" class="clients-list__link">
+                            <a href="" class="clients-list__link" aria-label="company">
                                 <svg class="clients-list__icon">
                                     <use
                                         href="./images/icons/svg-sprite-optimized.svg#icon-client-1"></use>
@@ -389,7 +422,7 @@
                             </a>
                         </li>
                         <li class="clients-list__item">
-                            <a href="" class="clients-list__link">
+                            <a href="" class="clients-list__link" aria-label="company">
                                 <svg class="clients-list__icon">
                                     <use
                                         href="./images/icons/svg-sprite-optimized.svg#icon-client-2"></use>
@@ -397,7 +430,7 @@
                             </a>
                         </li>
                         <li class="clients-list__item">
-                            <a href="" class="clients-list__link">
+                            <a href="" class="clients-list__link" aria-label="company">
                                 <svg class="clients-list__icon">
                                     <use
                                         href="./images/icons/svg-sprite-optimized.svg#icon-client-3"></use>
@@ -405,7 +438,7 @@
                             </a>
                         </li>
                         <li class="clients-list__item">
-                            <a href="" class="clients-list__link">
+                            <a href="" class="clients-list__link" aria-label="company">
                                 <svg class="clients-list__icon">
                                     <use
                                         href="./images/icons/svg-sprite-optimized.svg#icon-client-4"></use>
@@ -413,7 +446,7 @@
                             </a>
                         </li>
                         <li class="clients-list__item">
-                            <a href="" class="clients-list__link">
+                            <a href="" class="clients-list__link" aria-label="company">
                                 <svg class="clients-list__icon">
                                     <use
                                         href="./images/icons/svg-sprite-optimized.svg#icon-client-5"></use>
@@ -421,7 +454,7 @@
                             </a>
                         </li>
                         <li class="clients-list__item">
-                            <a href="" class="clients-list__link">
+                            <a href="" class="clients-list__link" aria-label="company">
                                 <svg class="clients-list__icon">
                                     <use
                                         href="./images/icons/svg-sprite-optimized.svg#icon-client-6"></use>
@@ -543,7 +576,7 @@
         <!--! Modal -->
         <div data-modal class="backdrop backdrop--hidden">
             <div class="modal">
-                <button data-modal-close class="modal__close-btn">
+                <button data-modal-close class="modal__close-btn" type="button">
                     <svg class="modal__icon-cross">
                         <use href="./images/icons/svg-sprite-optimized.svg#icon-close"></use>
                     </svg>
@@ -614,6 +647,57 @@
                     <button class="button modal-form__button" type="submit">Отправить</button>
                 </form>
             </div>
+        </div>
+
+        <!--! Mobile Menu -->
+        <div class="mobile-menu mobile-menu--hidden" data-menu id="menu">
+            <button class="menu-button" type="button" data-menu-close>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use
+                        class="menu-button__icon-menu"
+                        href="./images/icons/menu-sprite-optimized.svg#icon-cross"></use>
+                </svg>
+            </button>
+
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__link--active" href="./index.html"
+                        >Студия</a
+                    >
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="">Контакты</a>
+                </li>
+            </ul>
+
+            <div class="mobile-menu__contacts">
+                <a
+                    href="tel:380961111111"
+                    class="mobile-menu__contact-link mobile-menu__contact-link--accent"
+                    >+38 096 111 11 11</a
+                >
+                <a href="mailto:info@devstudio.com" class="mobile-menu__contact-link"
+                    >info@devstudio.com</a
+                >
+            </div>
+
+            <ul class="mobile-menu__socials">
+                <li class="mobile-menu__social-item">
+                    <a class="mobile-menu__social-link" href="">Instagram</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                    <a class="mobile-menu__social-link" href="">Twitter</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                    <a class="mobile-menu__social-link" href="">Facebook</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                    <a class="mobile-menu__social-link" href="">LinkedIn</a>
+                </li>
+            </ul>
         </div>
 
         <script src="./js/modal.js"></script>

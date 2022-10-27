@@ -1,44 +1,83 @@
+.site-nav {
+	@include alignCenteredFlex;
+	
+	&__logo {
+		margin-right: 85px;
+
+		@media screen and (min-width: $desktop) {
+			margin-right: 95px;
+		}
+	}
+	
+	&__list {
+		@extend %list;
+		@include alignCenteredFlex;
+
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+	}
+
+	&__item:not(:last-child) {
+		margin-right: 50px;
+	}
+}
+
+.site-nav__link {
+	position: relative;
+
+	display: block;
+	padding: 32px 0;
+	
+	color: getColor('title-text');
+	@include font($weight: 500, $letter-spacing: 0.02);
+
+	@include transition(color);
+
+	&:hover, 
+	&:focus {
+		color: getColor('accent');
+	}
+
+	&--active {
+		color: getColor('accent');
+		
+		&::after {
+			content: '';
+
+			position: absolute;
+			bottom: 0;
+			left: 0;
+
+			width: 100%;
+			height: 4px;
+
+			border-radius: 2px;
+
+			background-color: currentColor;
+		}
+	}
+}
+
+
+
+
 .menu-button {
-	display: inline-flex;
+	display: block;
 	padding: 0;
 	margin: 0;
+	margin-left: auto;
 
 	border: none;
 
 	background-color: transparent;
 
-	&__icon-cross {
-		display: none;
+	&:hover,
+	&:focus {
+		fill: getColor('accent');
 	}
 	
-	&--open {
-		.menu-button__icon-cross {
-			display: block;
-		}
-
-		.menu-button__icon-menu {
-			display: none;
-		}
-	}
-}
-
-.menu {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	transform: translateY(-200%);
-
-	width: 100%;	
-	padding: 30px 15px;
-
-	background-color: #896740;
-	color: white;
-	font-size: 20px;
-
-	transition: transform 500ms linear;
-
-	&--open {
-		transition: transform 500ms linear;
-		transform: translateY(0);
+	@media screen and (min-width: $tablet) {
+		display: none;
 	}
 }
