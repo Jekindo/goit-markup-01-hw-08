@@ -40,7 +40,12 @@
         @include font($size: 18px, $height: 1.56);
     }
 
+	&__link {
+		flex-grow: 1;
+	}
+	
     &__meta {
+		height: 100%;
         padding: 20px 24px;
 
         border: 1px solid getColor("product-border");
@@ -83,6 +88,9 @@
 }
 
 .portfolio__item {
+	display: flex;
+	flex-direction: column;
+	
     background-color: getCpolor("primary-white");
     @include transition(box-shadow);
 
