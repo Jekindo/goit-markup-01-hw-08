@@ -1,9 +1,5 @@
-console.log(
-	document.querySelector(".page-header--fixed").getBoundingClientRect().height
-);
-
 const { height: HeaderHeight } = document
-	.querySelector(".page-header--fixed")
-	.getBoundingClientRect();
+  .querySelector(".page-header")
+  .getBoundingClientRect();
 
 document.body.style.paddingTop = `${HeaderHeight}px`;
