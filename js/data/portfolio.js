@@ -1,10 +1,10 @@
 export default [
   {
     images: {
-      webp: "../../images/techcrack.webp",
-      webp_2x: "../../images/techcrack@2x.webp",
-      jpg: "../../images/techcrack.jpg",
-      jpg_2x: "../../images/techcrack@2x.jpg",
+      webp: "techcrack.webp",
+      webp_2x: "techcrack@2x.webp",
+      jpg: "techcrack.jpg",
+      jpg_2x: "techcrack@2x.jpg",
     },
     alt: "Ноутбук Mac Book Pro с открытым сайтом Технокряк",
     name: "Технокряк",
@@ -15,10 +15,10 @@ export default [
   },
   {
     images: {
-      webp: "../../images/basketball.jpg",
-      webp_2x: "../../images/basketball@2x.webp",
-      jpg: "../../images/basketball.jpg",
-      jpg_2x: "../../images/basketball@2x.jpg",
+      webp: "basketball.jpg",
+      webp_2x: "basketball@2x.webp",
+      jpg: "basketball.jpg",
+      jpg_2x: "basketball@2x.jpg",
     },
     alt: "Два баскетболиста соревнуются за мяч",
     name: "Постер New Orlean vs Golden Star",
@@ -28,10 +28,10 @@ export default [
   },
   {
     images: {
-      webp: "../../images/seafood.webp",
-      webp_2x: "../../images/seafood@2x.webp",
-      jpg: "../../images/seafood.jpg",
-      jpg_2x: "../../images/seafood@2x.jpg",
+      webp: "seafood.webp",
+      webp_2x: "seafood@2x.webp",
+      jpg: "seafood.jpg",
+      jpg_2x: "seafood@2x.jpg",
     },
     alt: "Логотип ресторана Seafood",
     name: "Ресторан Seafood",
@@ -42,10 +42,10 @@ export default [
   },
   {
     images: {
-      webp: "../../images/headphones.webp",
-      webp_2x: "../../images/headphones@2x.webp",
-      jpg: "../../images/headphones.jpg",
-      jpg_2x: "../../images/headphones@2x.jpg",
+      webp: "headphones.webp",
+      webp_2x: "headphones@2x.webp",
+      jpg: "headphones.jpg",
+      jpg_2x: "headphones@2x.jpg",
     },
     alt: "Полноразмерные наушники",
     name: "Проект Prime",
@@ -56,10 +56,10 @@ export default [
   },
   {
     images: {
-      webp: "../../images/boxes.webp",
-      webp_2x: "../../images/boxes@2x.webp",
-      jpg: "../../images/boxes.jpg",
-      jpg_2x: "../../images/boxes@2x.jpg",
+      webp: "boxes.webp",
+      webp_2x: "boxes@2x.webp",
+      jpg: "boxes.jpg",
+      jpg_2x: "boxes@2x.jpg",
     },
     alt: "Две коробки",
     name: "Проект Boxes",
@@ -70,10 +70,10 @@ export default [
   },
   {
     images: {
-      webp: "../../images/inspiration.webp",
-      webp_2x: "../../images/inspiration@2x.webp",
-      jpg: "../../images/inspiration.jpg",
-      jpg_2x: "../../images/inspiration@2x.jpg",
+      webp: "inspiration.webp",
+      webp_2x: "inspiration@2x.webp",
+      jpg: "inspiration.jpg",
+      jpg_2x: "inspiration@2x.jpg",
     },
     alt: "Apple IMac",
     name: "Inspiration has no Borders",
@@ -83,10 +83,10 @@ export default [
   },
   {
     images: {
-      webp: "../../images/limitededition.webp",
-      webp_2x: "../../images/limitededition@2x.webp",
-      jpg: "../../images/limitededition.jpg",
-      jpg_2x: "../../images/limitededition@2x.jpg",
+      webp: "limitededition.webp",
+      webp_2x: "limitededition@2x.webp",
+      jpg: "limitededition.jpg",
+      jpg_2x: "limitededition@2x.jpg",
     },
     alt: "Журнал с изданием Limited Edition",
     name: "Издание Limited Edition",
@@ -97,10 +97,10 @@ export default [
   },
   {
     images: {
-      webp: "../../images/lab.webp",
-      webp_2x: "../../images/lab@2x.webp",
-      jpg: "../../images/lab.jpg",
-      jpg_2x: "../../images/lab@2x.jpg",
+      webp: "lab.webp",
+      webp_2x: "lab@2x.webp",
+      jpg: "lab.jpg",
+      jpg_2x: "lab@2x.jpg",
     },
     alt: "Ярлык lAB EL TAG",
     name: "Проект LAB",
@@ -111,10 +111,10 @@ export default [
   },
   {
     images: {
-      webp: "../../images/growingbusiness.webp",
-      webp_2x: "../../images/growingbusiness@2x.webp",
-      jpg: "../../images/growingbusiness.jpg",
-      jpg_2x: "../../images/growingbusiness@2x.jpg",
+      webp: "growingbusiness.webp",
+      webp_2x: "growingbusiness@2x.webp",
+      jpg: "growingbusiness.jpg",
+      jpg_2x: "growingbusiness@2x.jpg",
     },
     alt: "Apple IMac",
     name: "Growing Business",
