@@ -31,8 +31,6 @@ const refs = {
 const portfolioListMarkup = createListItemsMarkup(portfolio, "all");
 populateList(portfolioListMarkup);
 
-// refs.input.addEventListener("input", _.debounce(onFilterChange, 300));
-
 function createListItemsMarkup(items, tag) {
   return items
     .map((item) => {
@@ -49,6 +47,7 @@ function createListItemsMarkup(items, tag) {
                     type="image/webp"
                   />
                   <img
+                  loading="lazy"
                   class="portfolio__image"
                   srcset="
                   ./images/${item.images.jpg} 1x,
@@ -57,6 +56,7 @@ function createListItemsMarkup(items, tag) {
                   src="./images/${item.images.jpg}"
                   alt="${item.alt}"
                   width="370"
+                  height="294"
                   />
                   </picture>
                   <div class="portfolio__overlay">
@@ -86,6 +86,7 @@ function createListItemsMarkup(items, tag) {
                     type="image/webp"
                   />
                   <img
+                  loading="lazy"
                   class="portfolio__image"
                   srcset="
                   ./images/${item.images.jpg} 1x,
@@ -94,6 +95,7 @@ function createListItemsMarkup(items, tag) {
                   src="./images/${item.images.jpg}"
                   alt="${item.alt}"
                   width="370"
+                  height="294"
                   />
                   </picture>
                   <div class="portfolio__overlay">
